@@ -226,7 +226,5 @@ static const char * _LFiOS13DarkMode_LayerKVO_Key = "_LFiOS13DarkMode_LayerKVO_K
     }
 }
 
-#pragma mark - supper view
-
 
 @end

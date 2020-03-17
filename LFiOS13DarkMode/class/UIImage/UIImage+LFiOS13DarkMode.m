@@ -15,42 +15,66 @@
 + (UIImage *(^)(UIImage *image))lf_iOS13UnspecifiedImage
 {
     return ^UIImage *(UIImage *image){
+#if __IPHONE_13_0
         return [self lf_imageWithiOS13DarkModeImage:image traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleUnspecified];
+#else
+        return image;
+#endif
     };
 }
 
 + (UIImage *(^)(UIImage *image))lf_iOS13LightImage
 {
     return ^UIImage *(UIImage *image){
+#if __IPHONE_13_0
         return [self lf_imageWithiOS13DarkModeImage:image traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleLight];
+#else
+        return image;
+#endif
     };
 }
 
 + (UIImage *(^)(UIImage *image))lf_iOS13DarkImage
 {
     return ^UIImage *(UIImage *image){
+#if __IPHONE_13_0
         return [self lf_imageWithiOS13DarkModeImage:image traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleDark];
+#else
+        return image;
+#endif
     };
 }
 
 - (UIImage *(^)(UIImage *image))lf_iOS13UnspecifiedImage
 {
     return ^UIImage *(UIImage *image){
+#if __IPHONE_13_0
         return [self lf_setiOS13DarkModeImage:image traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleUnspecified];
+#else
+        return image;
+#endif
     };
 }
 
 - (UIImage *(^)(UIImage *image))lf_iOS13LightImage
 {
     return ^UIImage *(UIImage *image){
+#if __IPHONE_13_0
         return [self lf_setiOS13DarkModeImage:image traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleLight];
+#else
+        return image;
+#endif
     };
 }
 
 - (UIImage *(^)(UIImage *image))lf_iOS13DarkImage
 {
     return ^UIImage *(UIImage *image){
+#if __IPHONE_13_0
         return [self lf_setiOS13DarkModeImage:image traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleDark];
+#else
+        return image;
+#endif
     };
 }
 
