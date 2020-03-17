@@ -80,7 +80,7 @@
 
 
 #pragma mark - private
-+ (UIImage *)lf_imageWithiOS13DarkModeImage:(UIImage *)image traitCollectionWithUserInterfaceStyle:(UIUserInterfaceStyle)userInterfaceStyle
++ (UIImage *)lf_imageWithiOS13DarkModeImage:(UIImage *)image traitCollectionWithUserInterfaceStyle:(UIUserInterfaceStyle)userInterfaceStyle API_AVAILABLE(ios(12.0))
 {
     if (!image) {
         return nil;
@@ -100,7 +100,7 @@
 #endif
 }
 
-- (UIImage *)lf_setiOS13DarkModeImage:(UIImage *)image traitCollectionWithUserInterfaceStyle:(UIUserInterfaceStyle)userInterfaceStyle
+- (UIImage *)lf_setiOS13DarkModeImage:(UIImage *)image traitCollectionWithUserInterfaceStyle:(UIUserInterfaceStyle)userInterfaceStyle API_AVAILABLE(ios(12.0))
 {
     if (!image) {
         return self;
