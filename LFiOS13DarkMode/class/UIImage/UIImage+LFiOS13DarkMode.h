@@ -12,13 +12,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIImage (LFiOS13DarkMode)
 
-+ (UIImage *(^)(UIImage *image))lf_imageWithUnspecifiedImage;
-+ (UIImage *(^)(UIImage *image))lf_imageWithLightImage;
-+ (UIImage *(^)(UIImage *image))lf_imageWithDarkImage;
++ (UIImage *(^)(UIImage *image))lf_iOS13UnspecifiedImage;
++ (UIImage *(^)(UIImage *image))lf_iOS13LightImage;
++ (UIImage *(^)(UIImage *image))lf_iOS13DarkImage;
 
-- (UIImage *(^)(UIImage *image))lf_setUnspecifiedImage;
-- (UIImage *(^)(UIImage *image))lf_setLightImage;
-- (UIImage *(^)(UIImage *image))lf_setDarkImage;
+- (UIImage *(^)(UIImage *image))lf_iOS13UnspecifiedImage;
+- (UIImage *(^)(UIImage *image))lf_iOS13LightImage;
+- (UIImage *(^)(UIImage *image))lf_iOS13DarkImage;
 
 @end
 
