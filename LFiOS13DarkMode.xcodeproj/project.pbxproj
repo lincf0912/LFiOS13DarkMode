@@ -22,6 +22,7 @@
 		3B86CDC2241F4D4300D6FA06 /* CALayer+LFiOS13DarkMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B86CDC1241F4D4300D6FA06 /* CALayer+LFiOS13DarkMode.m */; };
 		3B86CDC724205A5300D6FA06 /* LFiOS13DarkModeDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B86CDC624205A5300D6FA06 /* LFiOS13DarkModeDefine.m */; };
 		3B86CDCA2420665F00D6FA06 /* LFiOS13DarkModeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B86CDC92420665F00D6FA06 /* LFiOS13DarkModeTool.m */; };
+		3B86CDCF2420C89F00D6FA06 /* UIColor+LFiOS13DarkModeSystemColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B86CDCE2420C89F00D6FA06 /* UIColor+LFiOS13DarkModeSystemColors.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,8 @@
 		3B86CDC624205A5300D6FA06 /* LFiOS13DarkModeDefine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFiOS13DarkModeDefine.m; sourceTree = "<group>"; };
 		3B86CDC82420665F00D6FA06 /* LFiOS13DarkModeTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFiOS13DarkModeTool.h; sourceTree = "<group>"; };
 		3B86CDC92420665F00D6FA06 /* LFiOS13DarkModeTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFiOS13DarkModeTool.m; sourceTree = "<group>"; };
+		3B86CDCD2420C89F00D6FA06 /* UIColor+LFiOS13DarkModeSystemColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+LFiOS13DarkModeSystemColors.h"; sourceTree = "<group>"; };
+		3B86CDCE2420C89F00D6FA06 /* UIColor+LFiOS13DarkModeSystemColors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LFiOS13DarkModeSystemColors.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +132,8 @@
 			children = (
 				3B86CDB8241F196700D6FA06 /* UIColor+LFiOS13DarkMode.h */,
 				3B86CDB9241F196700D6FA06 /* UIColor+LFiOS13DarkMode.m */,
+				3B86CDCD2420C89F00D6FA06 /* UIColor+LFiOS13DarkModeSystemColors.h */,
+				3B86CDCE2420C89F00D6FA06 /* UIColor+LFiOS13DarkModeSystemColors.m */,
 			);
 			path = UIColor;
 			sourceTree = "<group>";
@@ -236,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B86CDCF2420C89F00D6FA06 /* UIColor+LFiOS13DarkModeSystemColors.m in Sources */,
 				3B86CDC724205A5300D6FA06 /* LFiOS13DarkModeDefine.m in Sources */,
 				3B86CDAF241F0BA300D6FA06 /* UIImage+LFiOS13DarkMode.m in Sources */,
 				3B86CD9A241F0B5500D6FA06 /* ViewController.m in Sources */,

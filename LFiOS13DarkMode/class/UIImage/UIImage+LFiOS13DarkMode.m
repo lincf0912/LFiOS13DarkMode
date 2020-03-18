@@ -12,6 +12,44 @@
 @implementation UIImage (LFiOS13DarkMode)
 
 #pragma mark - public
++ (UIImage *(^)(NSString *imageName))lf_iOS13UnspecifiedImageName
+{
+    return ^UIImage *(NSString *imageName){
+        return self.lf_iOS13UnspecifiedImage([UIImage imageNamed:imageName]);
+    };
+}
++ (UIImage *(^)(NSString *imageName))lf_iOS13LightImageName
+{
+    return ^UIImage *(NSString *imageName){
+        return self.lf_iOS13LightImage([UIImage imageNamed:imageName]);
+    };
+}
++ (UIImage *(^)(NSString *imageName))lf_iOS13DarkImageName
+{
+    return ^UIImage *(NSString *imageName){
+        return self.lf_iOS13DarkImage([UIImage imageNamed:imageName]);
+    };
+}
+
+- (UIImage *(^)(NSString *imageName))lf_iOS13UnspecifiedImageName
+{
+    return ^UIImage *(NSString *imageName){
+        return self.lf_iOS13UnspecifiedImage([UIImage imageNamed:imageName]);
+    };
+}
+- (UIImage *(^)(NSString *imageName))lf_iOS13LightImageName
+{
+    return ^UIImage *(NSString *imageName){
+        return self.lf_iOS13LightImage([UIImage imageNamed:imageName]);
+    };
+}
+- (UIImage *(^)(NSString *imageName))lf_iOS13DarkImageName
+{
+    return ^UIImage *(NSString *imageName){
+        return self.lf_iOS13DarkImage([UIImage imageNamed:imageName]);
+    };
+}
+
 + (UIImage *(^)(UIImage *image))lf_iOS13UnspecifiedImage
 {
     return ^UIImage *(UIImage *image){
@@ -88,10 +126,10 @@
 #if __IPHONE_13_0
     if (@available(iOS 13.0, *)) {
         UITraitCollection *traitCollection = [UITraitCollection traitCollectionWithUserInterfaceStyle:userInterfaceStyle];
-        UIImage *image = UIImage.new;
+        UIImage *newImage = UIImage.new;
         UIImage *pure = [image.imageAsset imageWithTraitCollection:traitCollection];
-        [image.imageAsset registerImage:pure withTraitCollection:traitCollection];
-        return image;
+        [newImage.imageAsset registerImage:pure withTraitCollection:traitCollection];
+        return newImage;
     } else {
 #endif
         return image;
